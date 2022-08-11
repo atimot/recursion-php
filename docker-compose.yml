@@ -1,0 +1,8 @@
+version: '3'
+services:
+  php:
+    build: .
+    volumes:
+      - ./php/src:/var/src
+      - ./php/conf/php.ini:/usr/local/etc/php/php.ini
+    tty: true
